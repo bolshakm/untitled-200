@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            display: inline-block;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .container {
+            padding: 16px;
+            width: 50%;
+            align-items: center;
+            border: 3px solid #f1f1f1;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .container1 {
+            padding: 16px;
+            width: 150px;
+            align-items: center;
+            border: 3px solid #f1f1f1;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+<h2 align="center">... oh my god ...</h2>
+<img src="img/maxresdefault.jpg" width="640" height="360">
+<div th:if="${status}">
+    <h2 align="center"> Your phone successful removed</h2>
+</div>
+
+
+<div class="container1">
+
+    <a href="/index">
+        <button>Again</button>
+    </a>
+    <a href="/die">
+        <button class="cancelbtn">Die</button>
+    </a>
+
+</div>
+
+
+</body>
+</html>

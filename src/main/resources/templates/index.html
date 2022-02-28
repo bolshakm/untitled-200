@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            display: inline-block;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #1e90e7;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .container {
+            padding: 16px;
+            width: 50%;
+            align-items: center;
+            border: 3px solid #f1f1f1;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+<h2 align ="center">What is my purpose?...</h2>
+<img src="img/med_1433953458_image.jpg">
+
+<h2 align ="center">Remove my phone number</h2>
+<form th:action="@{/action}" align ="center" method="post">
+
+    <div class="container" >
+        <input type="text" placeholder="380631234567" name=param value="380638165279" required>
+
+
+        <button type="submit">Remove</button>
+
+    </div>
+</form>
+
+
+</body>
+</html>
